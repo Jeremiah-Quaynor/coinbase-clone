@@ -18,8 +18,6 @@ minitab.addEventListener('mouseover',(event) =>{
     if(document.querySelector(".tab")) return;
     navBar.insertAdjacentHTML('afterend',render);
 })
-
-
 minitab.addEventListener('mouseout',(event) =>{
     if( !document.querySelector(".tab")) return;
     document.querySelector(".tab").remove()
