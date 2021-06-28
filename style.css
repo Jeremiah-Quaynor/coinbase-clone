@@ -17,7 +17,11 @@ body {
   display: flex;
   padding-left: 150px;
   padding-right: 150px;
-
+}
+.sticky{
+    position: fixed;
+    background: white;  
+    z-index: 100000;
 }
 .banner {
   width: 400px;
@@ -82,12 +86,6 @@ body {
   border: 1px solid rgb(22, 82, 240);
   background-color: rgb(22, 82, 240);
 }
-/* .nav--logs button:hover {
-  background: #3c46e4;
-  color: white;
-  border-radius: 9px;
-  font-weight: bold;
-} */
 .content {
   width: 1300px;
   margin-right: 15%;
@@ -99,8 +97,7 @@ body {
   height: 75vh;
   display: flex;
   flex-shrink: 0;
-  /* margin: 0px auto; */
-  padding-top: 24px;
+  padding-top: 100px;
   padding-bottom: 24px;
   overflow: hidden;
   max-width: 1142px;
@@ -211,7 +208,7 @@ body {
   width: 300px;
   height: 570px;
   background: rgb(240, 238, 238);
-  z-index: 100000;
+  z-index: 1000;
   border-radius: 10%;
   transform: translate(28%, 2%);
   border: 1px solid rgba(0, 0, 0, 0.568);
@@ -370,15 +367,14 @@ body {
   margin-right: 15px;
 }
 .list--div .lis .earn {
-  float: right;
   font-size: 16px;
   font-weight: bold;
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 70px;
   color: green;
   cursor: pointer;
+  display: flex;
+  margin-left: auto;
 }
 .list--div .lis:hover {
   background: rgba(199, 194, 194, 0.048);
@@ -753,6 +749,9 @@ body {
 @media screen and (max-width: 1050px) {
   .hidden{
     visibility: hidden;
+  }
+  .content{
+    width:max-content
   }
 }
 /* .foot .tabs{
