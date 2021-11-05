@@ -735,7 +735,7 @@ body {
 .tab ul li a {
   text-decoration: none;
   font-size: 20px;
-  color: black;
+  color: rgb(75, 75, 156);
   padding-bottom: 22px;
   cursor: pointer;
 }
